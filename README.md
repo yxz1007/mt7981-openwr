@@ -79,7 +79,7 @@ For a list of supported devices see the [OpenWrt Hardware Database](https://open
 
 
 ## License
-ImmortalWrt is licensed under [GPL-2.0-only](https://spdx.org/licenses/GPL-2.0-only.html).
+openWrt is licensed under [GPL-2.0-only](https://spdx.org/licenses/GPL-2.0-only.html).
 
 ## Acknowledgements
 <table>
