@@ -5,10 +5,8 @@
 ImmortalWrt is a fork of [OpenWrt](https://openwrt.org), with more packages ported, more devices supported, better performance, and special optimizations for mainland China users.<br/>
 Compared the official one, we allow to use hacks or non-upstreamable patches / modifications to achieve our purpose. Source from anywhere.
 
-Default login address: http://192.168.1.1 or http://immortalwrt.lan, username: __root__, password: _none_.
+Default login address: http://192.168.8.1 , username: __root__, password: _none_.
 
-## About immortalwrt-mt798x 
-- https://cmi.hanwckf.top/p/immortalwrt-mt798x/
 
 ## Development
 To build your own firmware you need a GNU/Linux, BSD or MacOSX system (case sensitive filesystem required). Cygwin is unsupported because of the lack of a case sensitive file system.<br/>
@@ -49,8 +47,8 @@ To build your own firmware you need a GNU/Linux, BSD or MacOSX system (case sens
   - For more details, please see [Build system setup](https://openwrt.org/docs/guide-developer/build-system/install-buildsystem) documentation.
 
   ### Quickstart
-  1. Run `git clone --depth=1 https://github.com/hanwckf/immortalwrt-mt798x.git` to clone the source code.
-  2. Run `cd immortalwrt-mt798x` to enter source directory.
+  1. Run `git clone --depth=1 https://github.com/yxz1007/mt7981-openwr.git` to clone the source code.
+  2. Run `cd mt7981-openwr` to enter source directory.
   3. Run `./scripts/feeds update -a` to obtain all the latest package definitions defined in feeds.conf / feeds.conf.default
   4. Run `./scripts/feeds install -a` to install symlinks for all obtained packages into package/feeds/
   5. Copy the configuration file for your device from the `defconfig` directory to the project root directory and rename it `.config`
@@ -69,11 +67,7 @@ To build your own firmware you need a GNU/Linux, BSD or MacOSX system (case sens
   7. Run `make menuconfig` to select your preferred configuration for the toolchain, target system & firmware packages.
   8. Run `make -j$(nproc)` to build your firmware. This will download all sources, build the cross-compile toolchain and then cross-compile the GNU/Linux kernel & all chosen applications for your target system.
 
-  ### Related Repositories
-  The main repository uses multiple sub-repositories to manage packages of different categories. All packages are installed via the ImmortalWrt package manager called opkg. If you're looking to develop the web interface or port packages to ImmortalWrt, please find the fitting repository below.
-  - [LuCI Web Interface](https://github.com/immortalwrt/luci): Modern and modular interface to control the device via a web browser.
-  - [ImmortalWrt Packages](https://github.com/immortalwrt/packages): Community repository of ported packages.
-  - [OpenWrt Routing](https://github.com/openwrt/routing): Packages specifically focused on (mesh) routing.
+
 
 ## Support Information
 For a list of supported devices see the [OpenWrt Hardware Database](https://openwrt.org/supported_devices)
@@ -83,9 +77,6 @@ For a list of supported devices see the [OpenWrt Hardware Database](https://open
   - [Developer Documentation](https://openwrt.org/docs/guide-developer/start)
   - [Technical Reference](https://openwrt.org/docs/techref/start)
 
-  ### Support Community
-  - Support Chat: group [@ctcgfw_openwrt_discuss](https://t.me/ctcgfw_openwrt_discuss) on [Telegram](https://telegram.org/).
-  - Support Chat: group [#immortalwrt](https://matrix.to/#/#immortalwrt:matrix.org) on [Matrix](https://matrix.org/).
 
 ## License
 ImmortalWrt is licensed under [GPL-2.0-only](https://spdx.org/licenses/GPL-2.0-only.html).
